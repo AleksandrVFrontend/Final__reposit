@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Проект</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">  
+        <script src="build/resources/jquery-3.4.1.js"></script>
+        <script src="build/resources/swiper.min.js"></script>
+        <script src="build/resources/jquery.inputmask.min.js"></script>
+        <script src="build/resources/jquery.validate.min.js"></script>
+        <script src="build/js/all.js"></script>
+        <link rel="stylesheet" type="text/css" href="build/resources/swiper.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="build/resources/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="build/resources/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="build/resources/favicon-16x16.png">
+        <link rel="manifest" href="build/resources/site.webmanifest">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="build/css/main.min.css">
+       
+    </head>
+
+    <body>
+        <header>
+            <div class="up-bar flex-container fixed-container">
+                <button class="up-bar__button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="nav-up">  
+                    <ul class="up-bar__left up-bar__left_display">
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#price">Стоимость</a></li>
+                    </ul> 
+                </nav>   
+
+                <div class="up-bar__right">
+                    <a class="up-bar__right__tel" href="tel:+7-(499)-995-55-77">+7 (499) 995-55-77</a>
+                    <button class="call-me up-bar__right__button">
+                        <span>Заказать звонок</span>
+                    </button>
+                    <button class="call-me up-bar__right__button__mobile"><img src="build/img/call.png" alt="звонок мне"></button> 
+                </div>         
+            </div>    
+        </header>    
+
+        <div class="a-popup a-popup_display">
+            <div class="a-popup-content">
+                <div class="a-popup-content-up">
+                    <h3 class="h3-a-popup">Мы перезвоним Вам в ближайшее время!</h3>
+
+                    <button class="a-button a-popup-content-close-button"><img src="build/img/mark.png" alt="close"></button>
+                </div> 
+            </div>
+        </div>
+                    
+        <div class="b-popup b-popup_display">
+            <div class="b-popup-content">
+                <div class="b-popup-content-up">
+                    <h3 class="h3-popup">Оставьте свои данные, мы с Вами свяжемся</h3>
+
+                    <button class="close-button b-popup-content-close-button"><img src="build/img/mark.png" alt="close"></button>
+                </div>
+                <form class="input-form flex-container">
+                    <input type="hidden" name="project_name" value="Тест">
+                    <input type="hidden" name="admin_email" value="a.v.frontend@gmail.com">
+                    <input type="hidden" name="form_subject" value="Имя">
+                    <label for="input__text" class="input-form-label-one">Имя *</label>
+                    <input id="input__text" type="text" class="input-form-text" name="Name" placeholder="Ваше Имя">
+
+                    <label for="input__tel" class="input-form-label-two">Номер *</label>
+                    <input id="input__tel" type="tel" class="input-form-tel" name="Phone" placeholder="Ваш номер телефона">
+
+                    <button class="button-burger input-form-button" type="submit">
+                        <span>Заказать звонок</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <main>
+            <section class="about-me">
+                <span class="signs one_sign" aria-hidden="true">&#123; &#125;</span>
+                <span class="signs two_sign" aria-hidden="true">&lt;div&gt;</span>
+                <span class="signs three_sign" aria-hidden="true">#</span>
+                <span class="signs four_sign" aria-hidden="true">&lt;div&gt;</span>
+                <span class="signs five_sign" aria-hidden="true">&lt;/&gt;</span>
+                <span class="signs five_sign__add" aria-hidden="true">&lt;/&gt;</span>
+
+                <div class="fixed-container flex-container about-me__container">
+                    <h1 class="about-me__name">Дмитрий Алексеев</h1>
+                    <p class="about-me__speciality">Frontend-разработчик и веб-верстальщик</p>
+                    <button class="about-me__button click-me" data-href="#portfolio">
+                        <span>Узнать больше</span>
+                    </button>
+                </div>
+                
+                <div class="svg__one">
+                    <svg class="svg__one__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 703 506.969">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #6055c4;
+                              fill-rule: evenodd;
+                              filter: url(#filter);                              
+                            };
+                          </style>
+                          <filter id="filter" x="1106.5" y="138.719"  filterUnits="userSpaceOnUse">
+                            <feImage preserveAspectRatio="none" x="1106.5" y="138.719"  result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTE5LjQ3IiBoZWlnaHQ9Ijc2Mi45NjkiIHZpZXdCb3g9IjAgMCA5MTkuNDcgNzYyLjk2OSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIzNzEuNjYyIiB5MT0iNzYyLjk2OSIgeDI9IjU0Ny44MDgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmY4ZjVhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC45ODciIHN0b3AtY29sb3I9IiNmZjJmOTYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmYyZjk2Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI5MTkuNDciIGhlaWdodD0iNzYyLjk2OSIvPgo8L3N2Zz4K"/>
+                            <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+                            <feBlend result="blend" in2="SourceGraphic"/>
+                          </filter>
+                        </defs>
+                        
+                        <path class="cls-1" d="M1501.52,178.407c106.74-50.456,207.47-50.611,291.69-12.736,84.44,37.567,152.36,113.165,198.49,207.114,44.27,94.884,44.23,196.8,8.07,279.242-36.66,83.673-97.67,146.755-180.8,191.777-44.03,22.669-90.32,38.2-149.15,47.731-58.06,9.394-128.68,12.79-203.5,7.944-148.47-9.321-314.87-53.081-349.96-151.789-19.89-49.013-7.41-105.2,17.32-161.74,25.13-56.624,62.5-113.6,101.74-166.115,39.64-52.593,81.15-100.717,123.89-141.529,43.14-40.9,87.51-74.479,142.21-99.9h0Z" transform="translate(-1106.5 -138.719)"/>
+                    </svg>
+                </div>
+
+                <img src="build/img/my_photo.png" class="my-photo" alt="Я">
+                
+            </section>
+
+            <section class="works">
+                <div class="fixed-container flex-container works__container">
+                    <h2 class="works__i" id="services">Что я делаю</h2>
+
+                    <ul class="works__icons flex-container">     
+                        <li class="works__icons__icon">
+                            <img src="build/img/programs.png" alt="1">
+                            <div><span>Вёрстка лендинг–страниц и сайтов любой сложности</span></div>
+                        </li>    
+                    
+                        <li class="works__icons__icon">
+                            <img src="build/img/responsive.png" alt="2">
+                            <div><span>Адаптивная вёрстка под все браузеры и устройства</span></div>
+                        </li>
+                   
+                        <li class="works__icons__icon">
+                            <img src="build/img/programming.png" alt="3">
+                            <div><span>Frontend–разработка и программирование</span></div>
+                        </li>
+                    
+                        <li class="works__icons__icon">
+                            <img src="build/img/coding.png" alt="4">
+                            <div><span>Исправление и доработка существующей вёрстки</span></div>
+                        </li>
+                    </ul>
+
+                    <div class="works__button">
+                        <button class="button__works click-me" data-href="#price">
+                            <span>Узнать стоимость</span>
+                        </button>
+                    </div>    
+                </div>
+            </section>
+
+            <section class="examples">
+                <div class="fixed-container flex-container examples__container">
+                    <h2 class="examples__my" id="portfolio">Примеры моих работ</h2>
+
+                    <div class="swiper">    
+                                  
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <div class="swiper-container">     
+                            <ul class="swiper-wrapper"> 
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="build/img/one.png" alt="Сайт психолога"></a>
+                                    
+                                    <div class="props">
+                                        <span>Сайт психолога Веры Антоновой</span>
+                                    </div>
+                                </li> 
+
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="build/img/two.png" alt="Сайт магазина детской одежды"></a>
+                                    
+                                    <div class="props">
+                                        <span>Сайт магазина детской одежды</span>
+                                    </div>
+                                </li> 
+
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="build/img/three.png" alt="Сайт магазина «Рыболов»"></a>
+                                    
+                                    <div class="props">
+                                        <span>Сайт магазина «Рыболов»</span>
+                                    </div>
+                                </li>                                 
+                            </ul>      
+                        </div>
+                    
+                        <div class="swiper-scrollbar"></div>
+                        <div class="swiper-pagination"></div>   
+                    </div>  
+                         
+                     
+                    <div class="examples__button">
+                        <button class="button__examples call-me">
+                            <span>Заказать проект</span>
+                            <span>Узнать стоимость</span>
+                        </button>
+                    </div>
+                </div>    
+            </section>
+
+            <section class="adapt">
+                <span class="signs six_sign white-color" aria-hidden="true">&#123; &#125;</span>
+                <span class="signs seven_sign white-color" aria-hidden="true">&lt;div&gt;</span>
+                <span class="signs eight_sign white-color" aria-hidden="true">#</span>
+                <span class="signs nine_sign white-color" aria-hidden="true">&#123; &#125;</span>
+                <span class="signs ten_sign white-color" aria-hidden="true">&lt;/&gt;</span>
+
+                <div class="fixed-container flex-container adapt__container">
+                    <h2 class="adapt__main" id="price">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h2>
+
+                    <p class="adapt__all">* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально,<br> в зависимости от сложности задач.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="fixed-container flex-container footer__container">
+                <nav>
+                    <ul class="footer__left">
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#price">Стоимость</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="footer__center">
+                    <li>
+                        <span class="fa fa-phone" aria-hidden="true"></span>
+                        <a href="tel:+7-(499)-995-55-55">+7 (499) 995-55-55</a>
+                    </li>
+                    <li>
+                        <span class="fa fa-envelope" aria-hidden="true"></span>
+                        <a href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
+                    </li>
+                </ul>
+
+                <div class="footer__right">       
+                    <button class="call-me footer__right__form footer-button">
+                        <span>Заказать звонок</span>
+                    </button>
+            
+                    <ul class="footer__right__social">
+                        <li><a class="vk" href="#"></a></li>
+                        <li><a class="facebook" href="#"></a></li>
+                        <li><a class="twitter" href="#" ></a></li>
+                        <li><a class="insta" href="#" ></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__border">
+                <span>© Александр Воробьев, 2016 – 2018</span>
+            </div>
+        </footer>
+    </body>
+</html>
