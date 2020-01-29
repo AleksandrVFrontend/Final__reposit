@@ -8,7 +8,7 @@ $(function() {
         $tel = $('#input__tel'),
         $menu = $('.up-bar__left li a'),
         $menuLeft = $('.up-bar__left'),
-        $menuButton = $('.up-bar__button')
+        $menuButton = $('.up-bar__button'),
         $body = $('html, body'),
         $clickButton = $('.click-me'),
         $footer = $('.footer__left li a'),
@@ -18,7 +18,7 @@ $(function() {
         $littleModal = $('.a-popup'),
         $a = $('.a-popup'),
         $modalForm = $('.input-form-tel'),
-        $swiperContainer = $('.swiper-container')
+        $swiperContainer = $('.swiper-container'),
         $props = $('.props span'),
         $buttonPrev = $('.swiper-button-prev'),
         $buttonNext = $('.swiper-button-next');            
